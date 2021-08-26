@@ -1,4 +1,10 @@
-$primary: Brown;
+$primary: rgb(8, 51, 170);
+
+.carousel-item img{
+    height: 600px;
+    object-fit: cover;
+}
+
 @-webkit-keyframes zoom {
     from {
       -webkit-transform: scale(1, 1);
@@ -17,7 +23,21 @@ $primary: Brown;
   }
 }
 
-.carousel-inner .item > img {
+.carousel-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-caption p, .carousel-caption h5{
+    color: black;
+    border-color: white;
+    background: rgba($color: #af4242, $alpha: 0.5);
+    border-radius: 10px;
+    max-width: 100px;
+}
+
+.carousel-inner .carousel-item > img {
   -webkit-animation: zoom 20s;
   animation: zoom 20s;
 }
