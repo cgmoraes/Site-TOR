@@ -21,16 +21,45 @@
 
 
 
-    <title>TOR</title>
-    
+    <title>Portal TOR</title>
+    <link rel="icon" href="images/logo_branco.png">
+
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">
-        <img src="images/logo_branco.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-        Portal TOR
+
+    <nav class="navbar navbar-expand-custom bg-primary">
+      <a class="navbar-brand navbar-logo" href="#">
+        <img class="img-logo" src="images/logo_branco.png" >
       </a>
-    </nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+              <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+              <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);">Dashboard</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="javascript:void(0);">Address Book</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);">Components</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);">Calendar</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);">Charts</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);">Documents</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -74,17 +103,89 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    
-
+  
       </div>
 
 
       <div class="container-fluid">
 
-        sdfjksl
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Equipe 1 - Nível 1
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>Igor</li>
+                  <li>João</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Equipe 7 - Nível 2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>Vini</li>
+                  <li>Douglas</li>
+                </ul></div>
+            </div>
+          </div>
+        </div>
       </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      // ---------Responsive-navbar-active-animation-----------
+        function test(){
+          var tabsNewAnim = $('#navbarSupportedContent');
+          var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
+          var activeItemNewAnim = tabsNewAnim.find('.active');
+          var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
+          var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
+          var itemPosNewAnimTop = activeItemNewAnim.position();
+          var itemPosNewAnimLeft = activeItemNewAnim.position();
+          $(".hori-selector").css({
+            "top":itemPosNewAnimTop.top + "px", 
+            "left":itemPosNewAnimLeft.left + "px",
+            "height": activeWidthNewAnimHeight + "px",
+            "width": activeWidthNewAnimWidth + "px"
+          });
+          $("#navbarSupportedContent").on("click","li",function(e){
+            $('#navbarSupportedContent ul li').removeClass("active");
+            $(this).addClass('active');
+            var activeWidthNewAnimHeight = $(this).innerHeight();
+            var activeWidthNewAnimWidth = $(this).innerWidth();
+            var itemPosNewAnimTop = $(this).position();
+            var itemPosNewAnimLeft = $(this).position();
+            $(".hori-selector").css({
+              "top":itemPosNewAnimTop.top + "px", 
+              "left":itemPosNewAnimLeft.left + "px",
+              "height": activeWidthNewAnimHeight + "px",
+              "width": activeWidthNewAnimWidth + "px"
+            });
+          });
+        }
+        $(document).ready(function(){
+          setTimeout(function(){ test(); });
+        });
+        $(window).on('resize', function(){
+          setTimeout(function(){ test(); }, 500);
+        });
+        $(".navbar-toggler").click(function(){
+          setTimeout(function(){ test(); });
+        });
 
+    </script>
+      
   </body>
 </html>
