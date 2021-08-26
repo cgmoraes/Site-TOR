@@ -1,8 +1,19 @@
-$primary: rgb(8, 51, 170);
+$primary:#1053c5;
 
 .carousel-item img{
     height: 600px;
     object-fit: cover;
+}
+//
+.info{
+    background-color: #af4242;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+body{
+    background-color: #010409;
+    font-family: 'Dancing Script', cursive;
 }
 
 @-webkit-keyframes zoom {
@@ -29,12 +40,29 @@ $primary: rgb(8, 51, 170);
     justify-content: center;
 }
 
+.navbar-brand{
+    margin-left: 10px;
+}
+
+.text{
+    //background-color: #1053c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text div{
+    background-color: #cfc4c4;
+    border-radius: 10px;
+    max-width: 500px;
+    padding: 5px;
+}
 .carousel-caption p, .carousel-caption h5{
     color: black;
     border-color: white;
-    background: rgba($color: #af4242, $alpha: 0.5);
-    border-radius: 10px;
-    max-width: 100px;
+    //background: rgba($color: #af4242, $alpha: 0.5);
+    //border-radius: 10px;
+   // max-width: 100px;
 }
 
 .carousel-inner .carousel-item > img {
