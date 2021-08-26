@@ -4,6 +4,7 @@
 /resources/
 
 # Numerous always-ignore extensions
+*.map
 *.diff
 *.err
 *.log
