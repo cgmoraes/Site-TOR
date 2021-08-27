@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,58 +8,60 @@
     <!-- Bootstrap CSS -->
     <link href="main.css" rel="stylesheet">
 
-    <!-- fonts -->
-    <style>
-     
-      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+    <title>Portal TOR</title>
+    <link rel="icon" href="images/logo_branco.png">
 
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
       body{
         font-family: 'Roboto', sans-serif;
+        background-color: #3b5998;
       }
     </style>
-
-
-
-    <title>Portal TOR</title>
-    <link rel="icon" href="images/logo_branco.png">
 
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-custom bg-primary">
-      <a class="navbar-brand navbar-logo" href="#">
-        <img class="img-logo" src="images/logo_branco.png" >
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars text-white"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-              <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
-              <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0);">Dashboard</a>
-              </li>
-              <li class="nav-item active">
-                  <a class="nav-link" href="javascript:void(0);">Address Book</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0);">Components</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0);">Calendar</a>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand navbar-logo" href="#">
+          <img class="img-logo" src="images/logo_branco.png" >
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                <li class="nav-item active">
+                    <a id="home-btn" class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#equipes">Equipes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);">Agenda</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0);">Charts</a>
+                  <a class="nav-link" href="javascript:void(0);">Sobre</a>
               </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0);">Documents</a>
-              </li>
-          </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);">Aulas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);">Vídeos</a>
+                </li>
+                
+            </ul>
+        </div>
       </div>
   </nav>
 
+  
 
+
+  <div id="home">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -72,9 +74,9 @@
             <img src="images/img1.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <div class="text">
-                <div>
-                  <h5>First slide label</h5>
-                  <p>Some ss placeholder content for the first slide.</p>
+                <div class="text2">
+                  <h5>OBR 2021</h5>
+                  <p>Treinamento para o campeonato da OBR</p>
                 </div>
               </div>
             </div>
@@ -82,15 +84,23 @@
           <div class="carousel-item">
             <img src="images/img2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <div class="text">
+                <div class="text2">
+                  <h5>Discord</h5>
+                  <p>Servidor no Discord</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
             <img src="images/img3.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <div class="text">
+                <div class="text2">
+                  <h5>Atendimento</h5>
+                  <p>Monitores disponíveis para tirar dúvidas</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -104,11 +114,13 @@
         </button>
       </div>
   
+    </div>
+    
+    <div class="container-fluid sec1" id="equipes" >
+      <div class="section-title">
+        <h3 style="color: rgb(255, 255, 255);">Equipes</h3>
       </div>
-
-
-      <div class="container-fluid">
-
+      <div class="equipes">
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
@@ -135,57 +147,190 @@
               <div class="accordion-body">
                 <ul>
                   <li>Vini</li>
-                  <li>Douglas</li>
+                  <li>Thiago</li>
                 </ul></div>
             </div>
           </div>
+        
+      </div>
+
+        <div class="imagem-div">
+          <div class="section-title">
+          </div>
+          <img class="img-section" src="images/img4.jpg">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid sec2">
+      <div class="title-agenda">
+        <div class="pill">
+          <h2>Agenda</h2>
+        </div>
+        <div class="pill">
+          <h3>Consulte as datas dos próximos eventos, competições e inscrições do projeto TOR.</h3>
         </div>
       </div>
 
+
+      <section class="card1">
+        <div class="card--content">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">17 de Agosto</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Finais OBR</h6>
+              <p class="card-text">Etapa final da Olímpiada Brasileira de Robótica. Equipes dos níveis 1 e 2 irão participar da etapa prática.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card--content">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">17 de Agosto</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Finais OBR</h6>
+              <p class="card-text">Etapa final da Olímpiada Brasileira de Robótica. Equipes dos níveis 1 e 2 irão participar da etapa prática.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card--content">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">17 de Agosto</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Finais OBR</h6>
+              <p class="card-text">Etapa final da Olímpiada Brasileira de Robótica. Equipes dos níveis 1 e 2 irão participar da etapa prática.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card--content">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">17 de Agosto</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Finais OBR</h6>
+              <p class="card-text">Etapa final da Olímpiada Brasileira de Robótica. Equipes dos níveis 1 e 2 irão participar da etapa prática.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card--content">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">17 de Agosto</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Finais OBR</h6>
+              <p class="card-text">Etapa final da Olímpiada Brasileira de Robótica. Equipes dos níveis 1 e 2 irão participar da etapa prática.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card--content">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">17 de Agosto</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Finais OBR</h6>
+              <p class="card-text">Etapa final da Olímpiada Brasileira de Robótica. Equipes dos níveis 1 e 2 irão participar da etapa prática.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card--content">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">17 de Agosto</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Finais OBR</h6>
+              <p class="card-text">Etapa final da Olímpiada Brasileira de Robótica. Equipes dos níveis 1 e 2 irão participar da etapa prática.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card--content">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">17 de Agosto</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Finais OBR</h6>
+              <p class="card-text">Etapa final da Olímpiada Brasileira de Robótica. Equipes dos níveis 1 e 2 irão participar da etapa prática.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card--content">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">17 de Agosto</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Finais OBR</h6>
+              <p class="card-text">Etapa final da Olímpiada Brasileira de Robótica. Equipes dos níveis 1 e 2 irão participar da etapa prática.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <div class="container-fluid sec3">
+      <div class="title-agenda">
+        <div class="pill">
+          <h2>Sobre</h2>
+        </div>
+        <div class="pill">
+          <h3>Consulte as datas dos próximos eventos, competições e inscrições do projeto TOR.</h3>
+        </div>
+        <div class="sobre">
+
+            <div class="sobre-fotos">
+              <div class="sobre-img">
+                <img src="./images/img1.jpg">
+              </div>
+              <div class="sobre-img">
+                <img src="./images/img1.jpg">
+              </div>
+            </div>
+            <div class="sobre-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, consectetur molestiae tempore consequuntur accusamus odit, sapiente mollitia totam corporis vel quibusdam accusantium dolor id itaque. Aut, alias. Asperiores, obcaecati in!
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+          <section class="mb-4 icons-sec">
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-discord"></i></a>
+              <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook"></i></a>
+            <!-- Instagram -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #333333;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright: Equipe Forgers
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>
-      // ---------Responsive-navbar-active-animation-----------
-        function test(){
-          var tabsNewAnim = $('#navbarSupportedContent');
-          var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
-          var activeItemNewAnim = tabsNewAnim.find('.active');
-          var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
-          var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
-          var itemPosNewAnimTop = activeItemNewAnim.position();
-          var itemPosNewAnimLeft = activeItemNewAnim.position();
-          $(".hori-selector").css({
-            "top":itemPosNewAnimTop.top + "px", 
-            "left":itemPosNewAnimLeft.left + "px",
-            "height": activeWidthNewAnimHeight + "px",
-            "width": activeWidthNewAnimWidth + "px"
-          });
-          $("#navbarSupportedContent").on("click","li",function(e){
-            $('#navbarSupportedContent ul li').removeClass("active");
-            $(this).addClass('active');
-            var activeWidthNewAnimHeight = $(this).innerHeight();
-            var activeWidthNewAnimWidth = $(this).innerWidth();
-            var itemPosNewAnimTop = $(this).position();
-            var itemPosNewAnimLeft = $(this).position();
-            $(".hori-selector").css({
-              "top":itemPosNewAnimTop.top + "px", 
-              "left":itemPosNewAnimLeft.left + "px",
-              "height": activeWidthNewAnimHeight + "px",
-              "width": activeWidthNewAnimWidth + "px"
-            });
-          });
-        }
-        $(document).ready(function(){
-          setTimeout(function(){ test(); });
-        });
-        $(window).on('resize', function(){
-          setTimeout(function(){ test(); }, 500);
-        });
-        $(".navbar-toggler").click(function(){
-          setTimeout(function(){ test(); });
-        });
 
-    </script>
+    <!-- importando font awesome e scripts-->
+    <script defer src="js/brands.js"></script>
+    <script defer src="js/solid.js"></script>
+    <script defer src="js/fontawesome.js"></script>
+    <script src="js/navbar.js"></script>
       
   </body>
 </html>
