@@ -8,21 +8,17 @@
     <!-- Bootstrap CSS -->
     <link href="main.css" rel="stylesheet">
 
-    <!-- fonts -->
-    <style>
-     
-      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+    <title>Portal TOR</title>
+    <link rel="icon" href="images/logo_branco.png">
 
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
       body{
         font-family: 'Roboto', sans-serif;
+        background-color: #010409;
       }
     </style>
-
-
-
-    <title>Portal TOR</title>
-    <link rel="icon" href="images/logo_branco.png">
 
   </head>
   <body>
@@ -45,17 +41,18 @@
                     <a class="nav-link" href="#equipes">Equipes</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);">Agenda</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);">Sobre</a>
+              </li>
+                <li class="nav-item">
                     <a class="nav-link" href="javascript:void(0);">Aulas</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="javascript:void(0);">Vídeos</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);">Agenda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);">Sobre</a>
-                </li>
+                
             </ul>
         </div>
       </div>
@@ -121,7 +118,7 @@
     
     <div class="container-fluid sec1" id="equipes" >
       <div class="section-title">
-        <h3 style="color: aliceblue;">Equipes</h3>
+        <h3 style="color: rgb(255, 255, 255);">Equipes</h3>
       </div>
       <div class="equipes">
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -157,15 +154,43 @@
         
       </div>
 
-        <div class="imagem-div sec2">
-
+        <div class="imagem-div">
+          <div class="section-title">
+          </div>
           <img class="img-section" src="images/img4.jpg">
-
         </div>
       </div>
-      </div>
+    </div>
 
-      <footer class="bg-dark text-center text-white">
+    <div class="container-fluid sec2">
+      <div class="all-cards">
+        
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    
+
+    <footer class="bg-dark text-center text-white">
       
         <div class="container p-4 pb-0">
           <section class="mb-4 icons-sec">
@@ -200,63 +225,18 @@
           </section>
         </div>
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright: Equipe Forgers
-        </div>
-      </footer>
+          © 2021 Copyright: Equipe Forgers
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-    <!-- importando font awesome-->
-    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
-    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
-    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
-    <script>
-      // ---------Responsive-navbar-active-animation-----------
-        function test(){
-          var tabsNewAnim = $('#navbarSupportedContent');
-          var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
-          var activeItemNewAnim = tabsNewAnim.find('.active');
-          var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
-          var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
-          var itemPosNewAnimTop = activeItemNewAnim.position();
-          var itemPosNewAnimLeft = activeItemNewAnim.position();
-          $(".hori-selector").css({
-            "top":itemPosNewAnimTop.top + "px", 
-            "left":itemPosNewAnimLeft.left + "px",
-            "height": activeWidthNewAnimHeight + "px",
-            "width": activeWidthNewAnimWidth + "px"
-          });
-          $("#navbarSupportedContent").on("click","li",function(e){
-            $('#navbarSupportedContent ul li').removeClass("active");
-            $(this).addClass('active');
-            var activeWidthNewAnimHeight = $(this).innerHeight();
-            var activeWidthNewAnimWidth = $(this).innerWidth();
-            var itemPosNewAnimTop = $(this).position();
-            var itemPosNewAnimLeft = $(this).position();
-            $(".hori-selector").css({
-              "top":itemPosNewAnimTop.top + "px", 
-              "left":itemPosNewAnimLeft.left + "px",
-              "height": activeWidthNewAnimHeight + "px",
-              "width": activeWidthNewAnimWidth + "px"
-            });
-          });
-        }
-        $(document).ready(function(){
-          setTimeout(function(){ test(); });
-        });
-        $(window).on('resize', function(){
-          setTimeout(function(){ test(); }, 500);
-        });
-        $(".navbar-toggler").click(function(){
-          setTimeout(function(){ test(); });
-        });
-
-        $("#home-btn").click(function(){
-          window.scrollTo(0, 0);
-        })
-
-    </script>
+    <!-- importando font awesome e scripts-->
+    <script defer src="js/brands.js"></script>
+    <script defer src="js/solid.js"></script>
+    <script defer src="js/fontawesome.js"></script>
+    <script src="js/navbar.js"></script>
       
   </body>
 </html>
