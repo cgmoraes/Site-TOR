@@ -12,7 +12,18 @@ i {
     height: 600px;
     object-fit: cover;
 }
-//
+.sec1{
+    background-color: #5161ce;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.sec2{
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .info{
     background-color: #af4242;
     padding-bottom: 10px;
@@ -21,6 +32,34 @@ i {
 
 body{
     background-color: #010409;
+}
+
+.img-section{
+    max-width: 300px;
+}
+
+.section-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.equipes{
+    min-height: 300px;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    padding-bottom: 30px;
+    background-color: #5161ce;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.equipes div{
+    min-width: 300px;
 }
 
 @-webkit-keyframes zoom {
