@@ -8,6 +8,10 @@ i {
 	margin-right: 10px;
 }
 
+.icons-sec a{
+	border-radius: 15px;
+}
+
 .carousel-item img{
     height: 600px;
     object-fit: cover;
@@ -15,7 +19,7 @@ i {
 .sec1{
     background-color: #5161ce;
     padding-top: 10px;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .sec2{
@@ -242,5 +246,9 @@ body{
 	}
 	
 }
+
+
+/*footer*/
+
 
 @import "node_modules/bootstrap/scss/bootstrap";

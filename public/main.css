@@ -7,6 +7,10 @@ i {
   margin-right: 10px;
 }
 
+.icons-sec a {
+  border-radius: 15px;
+}
+
 .carousel-item img {
   height: 600px;
   object-fit: cover;
@@ -15,7 +19,7 @@ i {
 .sec1 {
   background-color: #5161ce;
   padding-top: 10px;
-  color: #fff;
+  color: black;
 }
 
 .sec2 {
@@ -227,6 +231,7 @@ body {
   }
 }
 
+/*footer*/
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
