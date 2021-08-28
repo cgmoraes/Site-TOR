@@ -1,5 +1,6 @@
  // ---------Responsive-navbar-active-animation-----------
  function test(){
+
     var tabsNewAnim = $('#navbarSupportedContent');
     var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
     var activeItemNewAnim = tabsNewAnim.find('.active');
@@ -28,6 +29,7 @@
       });
     });
   }
+  
   $(document).ready(function(){
     setTimeout(function(){ test(); });
   });
