@@ -96,11 +96,13 @@
 /* Seções */
 
 .sec1{
-    padding-top: 10px;
+  background-image: url("../images/wave2.svg");
+  background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .sec1, .equipes, .section-title{
-	background-color: #333333;
+	
 }
 
 .sec2 {
