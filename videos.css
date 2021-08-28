@@ -436,22 +436,6 @@ body {
 }
 
 /*footer*/
-.discord, .facebook, .instagram, .github {
-  border-radius: 15px !important;
-}
-
-.discord, .facebook {
-  background-color: #3b5998 !important;
-}
-
-.instagram {
-  background-color: #ac2bac !important;
-}
-
-.github {
-  background-color: #333333 !important;
-}
-
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -12403,4 +12387,4 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=videos.css.map */

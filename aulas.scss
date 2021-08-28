@@ -276,7 +276,6 @@ body{
 	width: 100%;
 }
 
-
 /*Agenda*/
 
 .pill{
@@ -378,21 +377,7 @@ body{
 }
 
  /*footer*/
-.discord, .facebook, .instagram, .github{
-	border-radius: 15px !important;
-}
 
-.discord, .facebook{
-	background-color: #3b5998 !important;
-}
-
-.instagram{
-	background-color: #ac2bac !important;
-}
-
-.github{
-	background-color: #333333 !important;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import "./node_modules/bootstrap/scss/bootstrap";
