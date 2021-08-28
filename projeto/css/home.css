@@ -9,23 +9,20 @@
   padding-bottom: 10px;
 }
 
-.info{
-    background-color: #af4242;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
 
 .img-section{
     max-width: 300px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .equipes-bg{
 	border-radius: 30px; 
-	background-color: #3b5999; 
+	background-color: rgba(59, 89, 152, 0.5); 
 	padding: 10px;
 }
 
 .title-equipes{
+  padding-top: 20px;
 	display:flex;
 	justify-content: center; 
 	align-items: center; 
@@ -115,10 +112,6 @@
   background-image: url("../images/wave2.svg");
   background-repeat: no-repeat;
 	background-size: cover;
-}
-
-.sec1, .equipes, .section-title{
-	
 }
 
 .sec2 {
