@@ -19,6 +19,22 @@
     max-width: 300px;
 }
 
+.equipes-bg{
+	border-radius: 30px; 
+	background-color: #3b5999; 
+	padding: 10px;
+}
+
+.title-equipes{
+	display:flex;
+	justify-content: center; 
+	align-items: center; 
+	color: aliceblue;
+	flex-direction: column;
+	column-gap: 10px;
+	row-gap:10px;
+}
+
 .section-title{
     display: flex;
     align-items: center;
