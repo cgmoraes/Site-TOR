@@ -62,6 +62,20 @@
   <script defer src="js/solid.js"></script>
   <script defer src="js/fontawesome.js"></script>
   
+  <script>
+    window.addEventListener( "resize", ResizeWindow );
+
+    function ResizeWindow( )
+    {
+        var dataSpyList = [].slice.call( document.querySelectorAll( '[data-spy="scroll"]' ) );
+        
+        dataSpyList.forEach( function ( dataSpyElement )
+        {
+            bootstrap.ScrollSpy.getInstance( dataSpyElement ).refresh( );
+        } );
+    }
+</script>
+  
 </body>
 
 </html>

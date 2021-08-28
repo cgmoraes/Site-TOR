@@ -192,7 +192,7 @@
 	min-width: 40vh;
 	min-height: 40vh;
 	max-width: 80vh;
-  max-height: 80vh;
+
   width: 100%;
 	border-radius: 15px;
 	padding: 15px;
@@ -223,6 +223,7 @@
 }
 
 .sobre-img{
+  padding: 10px;
 	min-width: 50px;
 	min-height: 50px;
 	background-color:#00000000;

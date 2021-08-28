@@ -10,7 +10,6 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/home.css" rel="stylesheet">
 
-
   <title>Portal TOR</title>
   <link rel="icon" href="images/logo_branco.png">
 
@@ -288,9 +287,11 @@
           </div>
         </div>
         <div class="sobre-text">
-          O projeto Tor é um projeto de extensão que pertence ao grupo de robótica Forgers da Universidade Federal de São Paulo. 
-          Com parceria com algumas escolas da região o projeto busca alunos em escola pública e desenvolver o interesse oela robótica 
-          dando suporte para participarem da Olímpiada Brasileira de Roótica nas etapas práticas e teóricas.
+          <p style="text-indent: 3ch;">
+              O projeto Tor é um projeto de extensão que pertence ao grupo de robótica Forgers da Universidade Federal de São Paulo. 
+            Com parceria com algumas escolas da região o projeto busca alunos em escola pública e desenvolver o interesse oela robótica 
+            dando suporte para participarem da Olímpiada Brasileira de Robótica nas etapas práticas e teóricas.
+          </p>
         </div>
 
       </div>
@@ -328,6 +329,19 @@
   <script defer src="js/brands.js"></script>
   <script defer src="js/solid.js"></script>
   <script defer src="js/fontawesome.js"></script>
+  <script>
+    window.addEventListener( "resize", ResizeWindow );
+
+    function ResizeWindow( )
+    {
+        var dataSpyList = [].slice.call( document.querySelectorAll( '[data-spy="scroll"]' ) );
+        
+        dataSpyList.forEach( function ( dataSpyElement )
+        {
+            bootstrap.ScrollSpy.getInstance( dataSpyElement ).refresh( );
+        } );
+    }
+</script>
   
 
 </body>
