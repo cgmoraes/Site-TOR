@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="css/main.css" rel="stylesheet">
 
-    <title>Vídeos</title>
+    <title>Aulas</title>
     <link rel="icon" href="images/logo_branco.png">
 </head>
 
@@ -44,25 +44,38 @@
                     <li class="nav-item">
                         <a class="nav-link" href="aulas.html">Aulas</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Vídeos</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Vídeos</a>
                     </li>
 
                 </ul>
             </div>
         </div>
     </nav>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
   <!-- importando font awesome e scripts-->
   <script defer src="js/brands.js"></script>
   <script defer src="js/solid.js"></script>
   <script defer src="js/fontawesome.js"></script>
-  <script src="js/navbar.js"></script>
+  
+  <script>
+    window.addEventListener( "resize", ResizeWindow );
+
+    function ResizeWindow( )
+    {
+        var dataSpyList = [].slice.call( document.querySelectorAll( '[data-spy="scroll"]' ) );
+        
+        dataSpyList.forEach( function ( dataSpyElement )
+        {
+            bootstrap.ScrollSpy.getInstance( dataSpyElement ).refresh( );
+        } );
+    }
+</script>
+  
 </body>
 
 </html>

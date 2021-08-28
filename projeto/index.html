@@ -10,14 +10,14 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/home.css" rel="stylesheet">
 
-
   <title>Portal TOR</title>
   <link rel="icon" href="images/logo_branco.png">
 
 </head>
 
-<body>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
+<body  data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
+  <nav id="nav" class="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand navbar-logo" href="#">
         <img class="img-logo" src="images/logo_branco.png">
@@ -33,7 +33,7 @@
             <div class="right"></div>
           </div>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#equipes">Equipes</a>
@@ -289,9 +289,11 @@
           </div>
         </div>
         <div class="sobre-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, consectetur molestiae tempore consequuntur
-          accusamus odit, sapiente mollitia totam corporis vel quibusdam accusantium dolor id itaque. Aut, alias.
-          Asperiores, obcaecati in!
+          <p style="text-indent: 3ch;">
+              O projeto Tor é um projeto de extensão que pertence ao grupo de robótica Forgers da Universidade Federal de São Paulo. 
+            Com parceria com algumas escolas da região o projeto busca alunos em escola pública e desenvolver o interesse oela robótica 
+            dando suporte para participarem da Olímpiada Brasileira de Robótica nas etapas práticas e teóricas.
+          </p>
         </div>
 
       </div>
@@ -329,7 +331,20 @@
   <script defer src="js/brands.js"></script>
   <script defer src="js/solid.js"></script>
   <script defer src="js/fontawesome.js"></script>
-  <script src="js/navbar.js"></script>
+  <script>
+    window.addEventListener( "resize", ResizeWindow );
+
+    function ResizeWindow( )
+    {
+        var dataSpyList = [].slice.call( document.querySelectorAll( '[data-spy="scroll"]' ) );
+        
+        dataSpyList.forEach( function ( dataSpyElement )
+        {
+            bootstrap.ScrollSpy.getInstance( dataSpyElement ).refresh( );
+        } );
+    }
+</script>
+  
 
 </body>
 
