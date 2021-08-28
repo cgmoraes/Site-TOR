@@ -37,7 +37,3 @@
   $(".navbar-toggler").click(function(){
     setTimeout(function(){ test(); });
   });
-
-  $("#home-btn").click(function(){
-    window.scrollTo(0, 0);
-  })
