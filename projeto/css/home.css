@@ -3,6 +3,21 @@
     object-fit: cover;
 }
 
+@media (max-width: 600px) {
+  .carousel-item img{
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+.active2{
+	color: #5161ce !important;
+	background-color: #fff;
+	border-radius: 15px;
+  margin: 10px;
+  padding: 13px;
+}
+
 
 .imagem-div{
   padding-top: 10px;
@@ -14,6 +29,8 @@
     max-width: 300px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
+
+
 
 .equipes-bg{
 	border-radius: 30px; 
@@ -106,6 +123,7 @@
   animation: zoom 20s;
 }
 
+
 /* Seções */
 
 .sec1{
@@ -118,8 +136,8 @@
 	
 	padding-top: 20px;
 	padding-bottom: 20px;
-}
 
+}
 
 
 .sec3{

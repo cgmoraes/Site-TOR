@@ -33,11 +33,11 @@
             <div class="left"></div>
             <div class="right"></div>
           </div>
-          <li class="nav-item active">
-            <a class="nav-link" href="#home">Home</a>
+          <li class="nav-item" >
+            <a class="nav-link" id="gambi" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#equipes">Equipes</a>
+            <a class="nav-link" id="gambi2" href="#equipes">Equipes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#agenda">Agenda</a>
@@ -56,7 +56,8 @@
     </div>
   </nav>
 
-  <section id="home">
+  
+  <section id="home">  
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -116,7 +117,7 @@
     </div>
   </section>
 
-  <section class="container-fluid sec1" id="equipes">
+  <section class="container-fluid sec1" id="equipes" style="padding-top: 90px;margin-bottom: 20px;">
     <div class="title-equipes">
       <div class="equipes-bg">
         <h3 style="color: rgb(255, 255, 255);">Equipes</h3>
@@ -169,7 +170,7 @@
     </div>
   </section>
 
-  <section id="agenda" class="container-fluid sec2">
+  <section id="agenda" class="container-fluid sec2" style="padding-top: 90px;">
     <div class="title-agenda">
       <div class="pill">
         <h2>Agenda</h2>
@@ -292,7 +293,7 @@
         <div class="sobre-text">
           <p style="text-indent: 3ch;">
               O projeto Tor é um projeto de extensão que pertence ao grupo de robótica Forgers da Universidade Federal de São Paulo. 
-            Com parceria com algumas escolas da região o projeto busca alunos em escola pública e desenvolver o interesse oela robótica 
+            Com parceria com algumas escolas da região o projeto busca alunos em escolas públicas para desenvolver o interesse pela robótica 
             dando suporte para participarem da Olímpiada Brasileira de Robótica nas etapas práticas e teóricas.
           </p>
         </div>
@@ -333,18 +334,33 @@
   <script defer src="js/solid.js"></script>
   <script defer src="js/fontawesome.js"></script>
   <script>
-    window.addEventListener( "resize", ResizeWindow );
 
-    function ResizeWindow( )
-    {
-        var dataSpyList = [].slice.call( document.querySelectorAll( '[data-spy="scroll"]' ) );
-        
-        dataSpyList.forEach( function ( dataSpyElement )
-        {
-            bootstrap.ScrollSpy.getInstance( dataSpyElement ).refresh( );
-        } );
+    function test(){
+        var scroll = $(window).scrollTop();
+        var section = $("#equipes").position();
+
+        if(scroll <= section.top){
+          $("#gambi").addClass("active")
+          //$("#gambi2").removeClass("active")
+        }
+        else{
+          $("#gambi").removeClass("active")
+         //$("#gambi2").addClass("active")
+        }
     }
-</script>
+
+    $(document).ready(function(){
+        test();
+    })
+
+    $(window).scroll(function (event) {
+       test();
+    })
+
+
+    
+  </script>
+  
   
 
 </body>
