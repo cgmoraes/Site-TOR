@@ -39,4 +39,4 @@ projeto/.vscode/
 
 # Folders to ignore
 projeto/assets/js/coverage/
-projeto/node_modules/
+node_modules/
