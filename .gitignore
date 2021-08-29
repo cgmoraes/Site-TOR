@@ -1,7 +1,7 @@
 # Ignore docs files
-/projeto/_site/
-# Hugo resources folder
-/projeto/resources/
+projeto/_site/
+# Resources folder
+projeto/resources/
 
 # Numerous always-ignore extensions
 *.map
@@ -24,13 +24,12 @@
 .project
 .settings
 .tmproj
-.vscode
 *.esproj
 *.sublime-project
 *.sublime-workspace
 nbproject
 Thumbs.db
-/projeto/.vscode/
+projeto/.vscode/
 # Local Netlify folder
 .netlify
 
@@ -39,5 +38,5 @@ Thumbs.db
 *.komodoproject
 
 # Folders to ignore
-/projeto/assets/js/coverage/
-/projeto/node_modules/
+projeto/assets/js/coverage/
+projeto/node_modules/
