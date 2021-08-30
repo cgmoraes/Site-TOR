@@ -26,16 +26,19 @@
 
 
 .img-section{
-    max-width: 300px;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  max-width: 300px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
-
 
 
 .equipes-bg{
 	border-radius: 30px; 
 	background-color: rgba(59, 89, 152, 0.5); 
 	padding: 10px;
+}
+
+.equipes h3{
+  color: rgb(255, 255, 255);
 }
 
 .title-equipes{
@@ -130,6 +133,7 @@
   background-image: url("../img/wave2.svg");
   background-repeat: no-repeat;
 	background-size: cover;
+  padding-top: 90px;
 }
 
 .sec2 {
@@ -160,6 +164,12 @@
 .pill{
 	border-radius: 30px; 
 	background-color: #333333b4; 
+	padding: 10px;
+}
+
+.pill-escuro{
+	border-radius: 30px; 
+	background-color: rgba(59, 89, 152, 0.5); 
 	padding: 10px;
 }
 
