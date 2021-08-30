@@ -5,8 +5,8 @@
   padding: 0;
 }
 
-body {
-  font-family: "Roboto", sans-serif !important;
+#body {
+  font-family: "Roboto", sans-serif;
   background-image: url("../img/back.svg");
   background-attachment: fixed;
 }
@@ -37,20 +37,20 @@ body {
 }
 
 /*footer*/
-.discord, .facebook, .instagram, .github {
-  border-radius: 15px !important;
+#footer .discord, #footer .facebook, #footer .instagram, #footer .github {
+  border-radius: 15px;
 }
 
-.discord, .facebook {
-  background-color: #3b5998 !important;
+#footer .discord, #footer .facebook {
+  background-color: #3b5998;
 }
 
-.instagram {
-  background-color: #ac2bac !important;
+#footer .instagram {
+  background-color: #ac2bac;
 }
 
-.github {
-  background-color: #333333 !important;
+#footer .github {
+  background-color: #333333;
 }
 
 /*!
