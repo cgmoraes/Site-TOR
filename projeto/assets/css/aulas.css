@@ -1,9 +1,19 @@
-#menu-aulas{
+body{
     background-image: url("../img/back.svg");
+}
+
+#menu-aulas{
+    display: flex;
+    justify-content: center;
+    
     height: 500px;
     width:100%;
+    margin-top: 30px;
+    
 }
 
 #menu{
     background-color: aliceblue;
+    width:80%;
+    border-radius:15px;
 }
