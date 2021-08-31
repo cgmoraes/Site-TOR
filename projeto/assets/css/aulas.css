@@ -11,19 +11,23 @@
     width: 100%;
 }
 
+.code{
+    color: #e83e8c;
+    background-color: rgb(200, 211, 211);
+    padding: 3px;
+    border-radius: 5px;
+    border: solid 2px rgb(117, 117, 117);
+}
+
+.variavel{
+    color: rgb(26, 99, 148);
+}
+
 #menu{
     background-color: aliceblue;
     width:80%;
+    padding: 15px;
     border-radius:15px;
-}
-
-.conteudo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    row-gap: 30px;
-    column-gap: 30px;   
 }
 
 .botao{
