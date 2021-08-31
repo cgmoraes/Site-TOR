@@ -17,7 +17,7 @@
 </head>
 
 <body  id="body" data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-
+  <div id="home"></div>
   <nav id="nav" class="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand navbar-logo" href="#">
@@ -34,10 +34,10 @@
             <div class="right"></div>
           </div>
           <li class="nav-item" >
-            <a class="nav-link" id="gambi" href="#home">Home</a>
+            <a class="nav-link"  href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="gambi2" href="#equipes">Equipes</a>
+            <a class="nav-link" href="#equipes">Equipes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#agenda">Agenda</a>
@@ -57,7 +57,7 @@
   </nav>
   
   
-  <section id="home">  
+  <section>  
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -338,27 +338,7 @@
   <script defer src="assets/js/fontawesome.js"></script>
   <script>
 
-    function test(){
-        var scroll = $(window).scrollTop();
-        var section = $("#equipes").position();
-
-        if(scroll <= section.top){
-          $("#gambi").addClass("active")
-          //$("#gambi2").removeClass("active")
-        }
-        else{
-          $("#gambi").removeClass("active")
-         //$("#gambi2").addClass("active")
-        }
-    }
-
-    $(document).ready(function(){
-        test();
-    })
-
-    $(window).scroll(function (event) {
-       test();
-    })
+   
 
 
 
