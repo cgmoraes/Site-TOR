@@ -1,7 +1,3 @@
-body{
-    background-image: url("../img/back.svg");
-}
-
 #menu-aulas{
     display: flex;
     justify-content: center;
