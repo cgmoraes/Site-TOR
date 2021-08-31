@@ -11,9 +11,18 @@ body{
     margin-top: 30px;
 }
 
-
 #menu{
     background-color: aliceblue;
     width:80%;
     border-radius:15px;
+}
+
+.botao{
+	transition-duration: 0.4s;
+    border: 5px solid gray;
+  }
+  
+.botao:hover {
+	background-color: #5865f265; /* Green */
+	color: white;
 }
