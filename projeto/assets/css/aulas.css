@@ -93,3 +93,24 @@
         align-items: center;
     }
 }
+
+.tam-div{
+    min-width: fit-content;
+}
+
+.scroll{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-width: 100%;
+}
+
+.scroll button{
+    width: fit-content;
+}
+
+.fit{
+    width: fit-content;
+}
